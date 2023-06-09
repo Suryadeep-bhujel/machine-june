@@ -19,4 +19,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 Route::get("/new_updates", [PostController::class, 'new_updates']);
-Route::get("/comments/{content_id}", [PostController::class, 'new_updates']);
+Route::get("/comments/{content_id}", [PostController::class, 'comments']);

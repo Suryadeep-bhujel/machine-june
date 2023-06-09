@@ -15,7 +15,7 @@ class PostController extends Controller
          // all that has to be in single query, 
          // return laravel standard response format with http status code standerd status code
     }
-    public function  commments(Request $request, $id){
+    public function  comments(Request $request, $id){
         // request should send  one   of  tye type of content {post, feed , reels}
         // fetch active comments on that content and send in pagination, 
     }
