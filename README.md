@@ -19,9 +19,11 @@
 - Create your own repo for the project in any git platform with public access, 
 - Checkout With your Repo URL in git repo of project in  your local machine,
 -  push the code
-### Now Update 2 Apis, 
-- Go to api path in api.php, there are already 2 api is registered , update both of theirs logics in controller. 
+### Now Update Apis, 
+- Go to api path in api.php, there are already few apis are registered , update all of them with  theirs logics in controller. 
 - Basic Hints are given inside both method.
+- Commented api and method is not required to resolve
+- Follow maximum level of laravel standard
  
  
  ## Now 
