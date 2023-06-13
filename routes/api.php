@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\V1\Api\AuthController;
 use App\Http\Controllers\V1\Api\PostController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -15,8 +16,14 @@ use Illuminate\Support\Facades\Route;
 |
  */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
+Route::middleware('auth:sanctum')
+    ->get('/user', function (Request $request) {
+        return $request->user();
+    });
+Route::get("/login", [AuthController::class, 'login']);
+
+// implement the missing logic here
 Route::get("/new_updates", [PostController::class, 'new_updates']);
 Route::get("/comments/{content_id}", [PostController::class, 'comments']);
+// Route::post("/comments/{content_id}", [PostController::class, 'post_comment']);
+Route::post("/reacts/{content_id}", [PostController::class, 'post_react']);
