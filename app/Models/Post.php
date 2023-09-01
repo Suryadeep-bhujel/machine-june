@@ -17,11 +17,11 @@ class Post extends Model
     ];
     public function comments()
     {
-        //your code here
+        //Write your code here to fix the problem
 
     }
     public function reacts()
     {
-         
+        //Write your code here to fix the problem
     }
 }

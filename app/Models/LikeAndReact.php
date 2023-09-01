@@ -15,4 +15,8 @@ class LikeAndReact extends Model
         "reactable_id",
         "status",
     ];
+    public function reactable()
+    {
+        return $this->morphTo();
+    }
 }

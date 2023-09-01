@@ -20,8 +20,8 @@ class CommentSeeder extends Seeder
             foreach ($items as $item) {
                 $parent = null;
                 if ($status[array_rand($status)]) {
+                    // here is error in comments() method 
                     $parent = @$item->comments()->inRandomOrder()->first()?->id ?? null;
-
                 }
                 $data = [
                     "parent_id" => $parent,
@@ -39,6 +39,7 @@ class CommentSeeder extends Seeder
             foreach ($items as $item) {
                 $parent = null;
                 if ($status[array_rand($status)]) {
+                    // here is error in comments() method
                     $parent = @$item->comments()->inRandomOrder()->first()?->id ?? null;
                 }
                 $data = [
@@ -57,6 +58,7 @@ class CommentSeeder extends Seeder
             foreach ($items as $item) {
                 $parent = null;
                 if ($status[array_rand($status)]) {
+                    // here is error in comments() method
                     $parent = @$item->comments()->inRandomOrder()->first()?->id ?? null;
                 }
                 $data = [
