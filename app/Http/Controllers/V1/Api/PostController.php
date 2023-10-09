@@ -16,7 +16,10 @@ class PostController extends Controller
          // return laravel standard response format with http status code standerd status code
     }
     public function  comments(Request $request, $id){
-        // request should send  one   of  tye type of content {post, feed , reels}
+        // here id is  id of one of the (posts, feeds or reels)
+        // request should send  one   of  type [type of content {post, feed , reels}]
+        // should throw error response if  type of content is not appear in request 
+        // should throw error response if data is not exists for related content with id 
         // fetch active comments on that content and send in pagination, 
     }
 }

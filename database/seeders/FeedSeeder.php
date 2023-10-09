@@ -12,7 +12,7 @@ class FeedSeeder extends Seeder
      */
     public function run(): void
     {
-        Feed::factory()->count(1000)->create();
+        Feed::factory()->count(200)->create();
 
     }
 }
